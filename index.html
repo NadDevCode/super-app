@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>L'application Super App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="responsive.css"/>
+    </head>
+    <body>
+
+        <header>    <!--DEBUT HEADER-->
+            <div class="container container_header" id="header_color"> 
+                <div class="logo_menu">
+                    <div class="illustration">
+                        <img src="images/logo/Logo.png"
+                        srcset="images/Logo/Logo.png 1x,
+                                images/Logo/Logo@2x.png 2x"
+                        style="max-width: 120px;" alt="Logo de l'application Super App"/>
+                    </div>
+                    <nav>   <!--DEBUT NAV-->
+                        <input id="menu_toggle" type="checkbox" />
+                        <label class='menu_button_container' for="menu_toggle">
+                        <div class='menu_button'></div>
+                        </label>   
+                        <ul class="menu">
+                            <li><a href="#link_about" onclick="xxx()">A propos</a></li> 
+                            <li><a href="#link_services" onclick="xxx()">Services</a></li>
+                            <li><a href="#link_crew" onclick="xxx()">L'équipe</a></li> 
+                            <li><a href="#link_form" onclick="xxx()">Contact</a></li> 
+                        </ul>
+                    </nav>  <!--FIN NAV-->
+                </div> 
+            </div> 
+        </header>   <!--FIN HEADER-->
+
+        <Section id="link_about">    <!--DEBUT SECTION BANNER-->
+            <div class="container container_about">
+               <!--Image bannière titre avec téléphone background-image-->
+                <div class="text_buttons_banner">
+                    <h1>SUPER APP</h1>
+                    <h2>L’application trop super !</h2>
+                   
+                    <div class="buttons_banner">
+                        <button class="single_button"> <!--Bouton Like it-->
+                        <img src="images/icones/thumbs-up.svg" alt="Icone d'un pouce levé"/>Like it</button> 
+                        <button class="single_button"> <!--Bouton Love it-->
+                        <img src="images/icones/heart-shape-silhouette.svg" alt="Icone d'un pouce levé"/>Love it</button>
+                        <button class="single_button"> <!--Bouton Buy it-->
+                        <img src="images/icones/shopping-cart-black-shape.svg" alt="Icone d'un pouce levé"/>Buy it</button>    
+                    </div>
+                </div>
+            </div>    
+        </Section>  <!--FIN SECTION BANNER-->
+
+        <Section id="link_services">   <!--DEBUT SECTION DESCRIPTION APP-->
+            <div class="container container_app_description">
+                <h2>ELLE FAIT DES TRUCS SUPERS !</h2> 
+                <div class="icon_text_description"> <!--Enssemble des icones et du texte pour description de l'app-->
+                    <div class="single_description"> <!--Icone fourchette et couteau avec son texte-->
+                        <span><img src="images/icones/fork-and-knife-silhouette.svg" 
+                        alt="Icone d'une fourchette et d'un couteau"/></span>
+                        <h3>Mettre la table</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.
+                            Reprehendit provident nam officiis ex harum,
+                            dolor sit dicta mius fugit, debitis.
+                        </p>
+                    </div>
+
+                    <div class="single_description"> <!--Icone lit avec son texte-->
+                        <span><img src="images/icones/bed.svg" alt="Icone d'un lit"/></span>
+                        <h3>Faire le lit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.
+                            Reprehendit provident nam officiis ex harum,
+                            dolor sit dicta mius fugit, debitis.
+                        </p>
+                    </div>
+
+                    <div class="single_description"> <!--Icone flamme avec son texte-->
+                        <span><img src="images/icones/fire-symbol.svg" alt="Icone d'une flamme"/></span>
+                        <h3>Allumer le feu</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.
+                            Reprehendit provident nam officiis ex harum,
+                            dolor sit dicta mius fugit, debitis.
+                        </p>
+                    </div>
+                        
+                    <div class="single_description"> <!--Icone feuille arbre avec son texte-->
+                        <span><img src="images/icones/plant-leaf-with-white-details.svg" alt="Icone d'une feuille d'arbre"/></span>
+                        <h3>Ramasser les feuilles</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.
+                            Reprehendit provident nam officiis ex harum,
+                            dolor sit dicta mius fugit, debitis.
+                    </div>
+
+                    <div class="single_description"> <!--Icone d'un parapluie avec son texte-->
+                        <span><img src="images/icones/umbrella-black-silhouette.svg" alt="Icone d'un parapluie"/></span>
+                        <h3>Protéger de la pluie</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.
+                            Reprehendit provident nam officiis ex harum,
+                            dolor sit dicta mius fugit, debitis.
+                        </p>
+                    </div>
+
+                    <div class="single_description"> <!--Icone dollar avec sont texte-->
+                        <span><img src="images/icones/dollar-symbol.svg" alt="Icone du symbole dollar"/></span>
+                        <h3>Vider votre compte</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.
+                            Reprehendit provident nam officiis ex harum,
+                            dolor sit dicta mius fugit, debitis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </Section>  <!--FIN DESCRIPTION APP-->
+
+        <section id="link_crew">
+            <div class="container container_banner_crew">
+                <div class="title_crew">    <!--DEBUT BANNIERE ET TITRE DE L'EQUIPE-->
+                    <!--Image bannière équipe background-image-->
+                    <h2>La super équipe à l’origine de SuperApp</h2>
+                </div> 
+            </div>
+        </section>  <!--FIN BANNIERE ET TITRE DE L'EQUIPE -->
+
+        <section class="crew">  <!--DEBUT SECTION CREW-->
+            <div class="container"> 
+                <div class="photo_email_crew"> 
+                    <div class="single_photo_email"> <!--membre équipe 1-->
+                            <img class="circle_photo" src="images/equipe/avaone.jpg.png" 
+                                srcset="images/equipe/avaone.jpg.png 1x,
+                                        images/equipe/avaone.jpg@2x.png 2x"
+                                style="max-width: 240px;" alt="Photo du visage d'un homme, membre de l'équipe"/>
+                        <h3>Tex Talign</h3>
+                        <div class="write_button"> <!--Bouton "lui ecrire" membre 1-->
+                            <a href="mailto:nom@example.com">
+                            <span class="write_icon"><img src="images/icones/envelope.svg"></span>Lui écrire</a>
+                        </div>
+                    </div>    
+                            
+                    <div class="single_photo_email"> <!--membre équipe 2-->
+                            <img class="circle_photo" src="images/equipe/avatwo.jpg.png" 
+                                srcset="images/equipe/avatwo.jpg.png 1x,
+                                        images/equipe/avatwo.jpg@2x.png 2x"
+                                style="max-width: 240px;"alt="Photo du visage d'une femme, membre de l'équipe"/>
+                        <h3>Marge Inn</h3>
+                        <div class="write_button"> <!--Bouton "lui ecrire" membre 2-->
+                            <a href="mailto:nom@example.com">
+                            <span class="write_icon"><img src="images/icones/envelope.svg"></span>Lui écrire</a>
+                        </div>
+                    </div> 
+                        
+                    <div class="single_photo_email"> <!--membre équipe 3-->
+                        <img class="circle_photo" src="images/equipe/avathree.jpg.png" 
+                             srcset="images/equipe/avathree.jpg.png 1x,
+                                     images/equipe/avathree.jpg@2x.png 2x"
+                             style="max-width: 240px;"
+                        alt="Photo du visage d'un homme, membre de l'équipe"/>
+                        <h3>Isaac Newton</h3>
+                        <div class="write_button"> <!--Bouton "lui ecrire" membre 3-->
+                            <a href="mailto:nom@example.com">
+                                <span class="write_icon"><img src="images/icones/envelope.svg"></span>Lui écrire</a>
+                        </div>
+                    </div>
+                        
+                    <div class="single_photo_email"> <!--membre équipe 4-->
+                        <img class="circle_photo" src="images/equipe/avafour.jpg.png"
+                            srcset="images/equipe/avafour.jpg.png 1x,
+                                    images/equipe/avafour.jpg@2x.png 2x"
+                            style="max-width: 240px;" alt="Photo du visage d'un homme, membre de l'équipe"/>
+                        <h3>Ash Tehemel</h3>
+                        <div class="write_button"> <!--Bouton "lui ecrire" membre 4-->
+                            <a href="mailto:nom@example.com">
+                            <span class="write_icon"><img src="images/icones/envelope.svg"></span>Lui écrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  <!--FIN SECTION CREW-->
+
+        <footer id="link_form">    
+            <div class="container" id="footer_color"> 
+                <h2>ENVOYEZ-NOUS UN MESSAGE</h2>
+                <form action="" method="get" class="form_global">  <!--DEBUT FORMULAIRE CONTACT-->
+                    <div class="row_name_email"> <!--row nom et email-->
+                        <div class="form_column">
+                             <label for="full_name">Votre nom</label>
+                             <input id="full_name" name="full_name" type="text"/>
+                        </div>
+    
+                        <div class="form_column">
+                            <label for="email">Votre e-mail</label>
+                            <input id="email" name="email" type="email"/>
+                       </div>
+                    </div>
+
+                    <label for="message">Votre message</label>
+                    <textarea id="message" ></textarea>
+                    <div class="button_submit">
+                        <button>
+                        <img src="images/icones/paper-plane.svg" alt="Icone d'un avion en papier"/>Envoyer
+                        </button> 
+                    </div>
+                </form> <!--FIN FORMULAIRE CONTACT-->
+            </div>
+        </footer>
+        
+        <script>
+            function xxx() {
+                document.getElementById("menu_toggle").checked = false; //Décoche checkbox lorsque click sur lien menu hamburger
+            }
+        </script>
+    </body>
+</html>

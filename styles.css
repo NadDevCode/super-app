@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color :#2E2E2E;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*DEBUT HEADER*/
+
+#header_color {
+    background-color: #DD5555;
+}
+
+.logo_menu {
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+
+.logo_menu img {
+    margin-left: 116px;
+    margin-right: 15px;
+}
+
+
+.menu {
+    font-size: 0;   /* Eviter écart entre les div li */
+} 
+
+.menu li {
+    display: inline;
+    font-size: 14px;
+    padding: 16.5px 20px;   
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.menu a:link,
+.menu a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu li:active {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* FIN HEADER */
+
+
+/* DEBUT SECTION BANNER ABOUT */
+
+.container_about {
+    background-image: url("images/banniere/about.jpg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 658px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10.5px;
+}
+
+.text_buttons_banner h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.text_buttons_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons_banner {
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    height: auto;
+    
+    padding-top: 25px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.single_button {
+    font-size: 18px;
+    color: #2E2E2E;
+    background-color: #FFFFFF;
+    
+    width: 112px;
+    height: 46px;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    
+    cursor: pointer;
+}
+
+.single_button img {
+    margin-right: 15px;
+}
+
+/* FIN SECTION BANNER ABOUT */
+
+
+/* DEBUT SECTION DESCRIPTION APP */
+
+.container_app_description h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    
+    margin-top: 52px;
+    margin-bottom: 50px;
+}
+
+.icon_text_description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    gap: 40px;
+    margin: 0 80px 52px 80px;
+}
+
+.single_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.single_description h3 {
+    font-size: 28px;
+    margin-bottom: 7.16px; 
+    text-align: center; 
+}
+
+.single_description p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.single_description span {
+    display: flex;
+    justify-content: center;
+    background: #DD5555;
+    width: 120px;
+    height: 120px;
+
+    border-radius: 60px;
+    margin-bottom: 15px;
+}
+
+/* FIN SECTION DECRIPTION APP */
+
+
+/* DEBUT BANNIERE ET TITRE DE L'EQUIPE  */
+
+.container_banner_crew {
+    background-image: url("images/banniere/team.jpg.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_crew h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+/* FIN BANNIERE ET TITRE DE L'EQUIPE  */
+
+
+/* DEBUT SECTION CREW */
+
+.photo_email_crew {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 64px 95px 0 95px;
+}
+
+.single_photo_email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle_photo {
+    border-radius: 200px;
+    margin-bottom: 23px;
+}
+
+.single_photo_email h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+.write_button {
+    background-color: #DD5555;
+    width: 132px;
+    height: 40px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.write_button a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    line-height: 40px;
+}
+
+.write_button a:link         
+.write_button a:visited {
+    color: #FFFFFF;
+}
+
+.write_button:hover {                          
+    background-color: hsl(3, 37%, 51%);
+}
+
+.write_button:active {                  
+    background-color: #6d3634;
+}
+
+.write_icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* FIN SECTION CREW */
+
+
+/* DEBUT FORMULAIRE CONTACT */
+
+#footer_color {
+    background-color: #DD5555;
+}
+
+footer h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF; 
+    text-align: center;
+
+    margin: 50.5px 0 51.5px 0;
+    padding-top: 50.5px;
+}
+
+.form_column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_column input {
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.form_column input[type="text"]:invalid,
+.form_column input[type="email"]:invalid {
+  color: #db1418;
+  box-shadow: none;
+}
+
+.row_name_email {
+    display: flex;
+    flex-direction: row;
+}
+
+.form_global {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: auto;
+}
+
+.form_global label {
+    color:#FFFFFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+ 
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    min-height: 112px;
+    padding: 2px;
+    border: none;
+    border-radius: 2px;;
+    resize: none;
+    
+    margin-bottom: 18px;
+}
+
+.button_submit {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 45px;
+}
+
+.button_submit button {
+    width: 123px;
+    height: 46px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    line-height: 46px;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+.button_submit img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* FIN FORMULAIRE CONTACT */
+
+
+/* SELECTEURS VALEURS COMMUNE */
+
+.single_button:hover,
+.form_global button:hover {
+    background-color: rgb(216, 216, 216); 
+}
+
+.single_button:active,
+.form_global button:active {
+    color:#FFFFFF;                  
+    background-color: #535353;
+}
+
+
+/*responsive logo*/
+
+.illustration img {
+    width: 100%;        
+    display: block; 
+}
+
+
+/* DEBUT BOUTON MENU HAMBURGER */
+
+/* Taille/affichage/position bouton menu */
+
+.menu_button_container {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Apprence barre centrale bouton menu */
+
+.menu_button,
+.menu_button::before,
+.menu_button::after {
+    display: block;
+    height: 3px;
+    width: 30px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+}
+
+/* Création/position barre supérieur bouton menu */
+
+.menu_button::before {
+    content: "";
+    margin-top: -9px;
+}
+
+/* Création/position barre inférieur bouton menu */
+
+.menu_button::after {
+    content: "";
+    margin-top: 9px;
+}
+
+#menu_toggle {
+    display: none;
+}
+      
+/* FIN BOUTON MENU HAMBURGER */
