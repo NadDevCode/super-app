@@ -1,0 +1,321 @@
+/* SMARTPHONE */
+
+@media screen and (min-width: 360px) {
+    .container {
+        max-width: 400px;
+    }
+
+    /* HEADER */
+
+    .logo_menu img {
+        margin-left: 0;
+    }
+
+    .logo_menu {
+        justify-content: space-between;
+    }
+
+    /* SECTION BANNER ABOUT */
+
+    .buttons_banner {
+        width: 360px;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SECTION DESCRIPTION APP */
+
+    .icon_text_description {
+        margin: 0 0 52px 0;
+    }
+
+    .single_description {
+        width: 100%;
+    }
+
+    /* BANNIERE ET TITTE DE L'EQUIPE */
+
+    .container_banner_crew {
+        height: 330px; 
+    }
+
+    .title_crew h2 {
+        line-height: 1.2em;
+    }
+
+    /* SECTION CREW */
+   
+    .photo_email_crew {
+        margin: 64px 0 0 0;
+        justify-content: center;
+    }
+
+    .single_photo_email {
+        margin-bottom: 30px;
+    }
+
+
+    /* FORMULAIRE CONTACT */
+
+   .row_name_email {
+        flex-direction: column;
+        gap : 0;
+    }
+}
+
+
+/* SMARTPHONE LARGE */
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 600px;
+    }
+
+    /* HEADER */
+
+    .logo_menu img {
+        margin-left: 30px;
+    }
+
+    .logo_menu {
+        justify-content: left;
+    }
+
+    /* SECTION BANNER ABOUT */
+
+    .buttons_banner {
+        width: 540px;
+        height: auto;
+        flex-direction: row;
+    }
+
+    /* SECTION DESCRIPTION APP */
+
+     .icon_text_description {
+        margin: 0 0 52px 0;
+    }
+
+    .single_description {
+        width: 90%;
+    }
+
+    /* BANNIERE ET TITTE DE L'EQUIPE */
+
+     .container_banner_crew {
+        height: 240px; 
+    }
+
+    .title_crew h2 {
+        line-height: normal;
+    }
+
+    /* SECTION CREW */
+   
+    .photo_email_crew {
+        margin: 64px 95px 0 95px;
+        justify-content: center;
+    }
+}
+
+
+/* TABLETTE PORTRAIT */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+
+    /* SECTION DESCRIPTION APP */
+
+    .single_description {
+        width: 40%;
+    }
+
+    /* SECTION CREW */
+   
+    .photo_email_crew {
+        justify-content: space-between;
+    }
+
+    .circle_photo {
+        width: 100%;   
+    }
+
+    .row_name_email {
+        flex-direction: row;
+        gap :32px;
+    }
+}
+
+/* TABLETTE PAYSAGE */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+    
+    /* HEADER */
+
+    .logo_menu img {
+        margin-left: 15px;
+    }
+    
+    /* SECTION DESCRIPTION APP */
+
+    .icon_text_description {
+        margin: 0 40px 52px 40px;
+    } 
+    
+    .single_description {
+        width: 30%;
+    }
+
+    /* SECTION CREW */
+    
+    .photo_email_crew {
+        margin: 64px 0 0 0;
+    }
+
+    .circle_photo {
+        width: 96%;   
+    }
+
+    .single_photo_email {
+        margin-bottom: 0;
+    }
+}
+
+
+/* ORDINATEUR */
+
+@media screen and (min-width: 1440px) { 
+    .container {
+        max-width: 1400px;
+    }
+    
+    /* HEADER */
+
+    .logo_menu img {
+        margin-left: 116px;
+    }
+ 
+    /* SECTION BANNER ABOUT */
+
+    .buttons_banner {
+        width: 405px;
+    }
+
+   /* SECTION DESCRIPTION APP */
+
+    .icon_text_description {
+        margin: 0 80px 52px 80px;
+    }
+
+    /* SECTION CREW */
+
+    .photo_email_crew {
+        margin: 64px 95px 0 95px;
+    }
+
+    .circle_photo {
+        width: 100%;
+    }
+}
+
+
+/* RETINA BACKGROUND-IMAGE */
+
+@media  screen and (min-width: 1440px), 
+        screen and (min-width: 1024px),
+        screen and (min-width: 768px) {
+            @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                    only screen and (-moz-min-device-pixel-ratio: 1.5),
+                    only screen and (-o-min-device-pixel-ratio: 3/2),
+                    only screen and (min-device-pixel-ratio: 1.5) {
+                        .container_about {
+                            background-image:   url("images/banniere/about.jpg@2x.png");      
+                        }
+
+                        .container_banner_crew {
+                            background-image:   url("images/banniere/team.jpg@2x.png");
+                         }
+            }
+}
+
+
+/* HAMBURGER MENU */
+
+@media screen and (max-width: 639px) {
+
+
+    .menu_button_container {
+        display: flex;
+    }
+    
+    /* Position menu hamburger */
+    
+    .container_header {
+        position: relative;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; 
+        margin-top: 51px;
+    }
+    
+    /* Transition menu hamburger fermeture */
+    
+    #menu_toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 450ms cubic-bezier(0.23, 1, 0.23, 1);
+    }
+    
+    /* Transition menu hamburger ouverture */
+    
+    #menu_toggle:checked ~ .menu li {
+        height: 23.5vh;     
+        transition: height 450ms cubic-bezier(0.23, 1, 0.32, 1);   
+    }
+    
+    .menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        overflow: hidden;
+        
+        background-color: #FFFFFF;  
+    }
+    
+    .menu a {
+        border-bottom: 1.5px solid  #DD5555;
+        padding: 0 40px 20px 40px;
+    }
+    
+    .menu a:link,
+    .menu a:visited {
+        color: #DD5555;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .menu a:active {
+        color: #6d3634;
+    }
+    
+    .menu li:hover,
+    .menu li:active {
+        background-color: #FFFFFF;
+    }
+}
