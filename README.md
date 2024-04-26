@@ -2,6 +2,11 @@
 
 Réalisation d'une page promotionnelle pour une application fictive, à partir d'une maquette.
 
+<br/>
+<p align="center">
+<a href="https://naddevcode.github.io/super-app/"><strong>Demo du projet »</strong></a>
+</p>
+
 ![-----](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png)
 
 ## Maquette
